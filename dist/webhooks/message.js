@@ -1,5 +1,5 @@
-import { webhookClient } from ".";
-import { handleWebhookAudioMessage, handleWebhookDocumentMessage, handleWebhookImageMessage, handleWebhookVideoMessage, } from "./media";
+import { webhookClient } from "./index.js";
+import { handleWebhookAudioMessage, handleWebhookDocumentMessage, handleWebhookImageMessage, handleWebhookVideoMessage, } from "./media.js";
 export const createWebhookMessage = (props) => async (message) => {
     if (message.key.fromMe || message.key.remoteJid?.includes("broadcast"))
         return;

@@ -1,4 +1,4 @@
-import { CreateWebhookProps } from ".";
+import { CreateWebhookProps } from "./index.js";
 type SessionStatus = "connected" | "disconnected" | "connecting";
 type WebhookSessionBody = {
     session: string;

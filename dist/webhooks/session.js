@@ -1,4 +1,4 @@
-import { webhookClient } from ".";
+import { webhookClient } from "./index.js";
 export const createWebhookSession = (props) => async (event) => {
     const endpoint = `${props.baseUrl}/session`;
     const body = {

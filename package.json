@@ -2,6 +2,7 @@
   "name": "wa-gateway",
   "version": "4.4.3",
   "scripts": {
+    "build": "tsc",
     "dev": "tsx watch src/index.ts",
     "start": "tsx src/index.ts"
   },
@@ -35,6 +36,7 @@
   },
   "devDependencies": {
     "@types/node": "^22.10.1",
-    "@types/qrcode": "^1.5.5"
+    "@types/qrcode": "^1.5.5",
+    "typescript": "^5.9.3"
   }
 }

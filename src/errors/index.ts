@@ -1,10 +1,13 @@
+import { ContentfulStatusCode } from "hono/utils/http-status";
+
 export class ApplicationError extends Error {
   baseName = "ApplicationError";
-  code = 500;
+  code: ContentfulStatusCode;
 
-  constructor(message: string) {
+  constructor(message: string, code: ContentfulStatusCode = 500) {
     super(message);
     this.name = "ApplicationError";
+    this.code = code;
   }
 
   getResponseMessage = () => {
